@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1569862328 source:c:\users\artur\onedrive\nueva carpeta (3)\game\src\player.cpp
+	"Player.h"
+
+1569875302 c:\users\artur\onedrive\nueva carpeta (3)\game\include\player.h
+
+1569871344 source:c:\users\artur\onedrive\nueva carpeta (3)\game\main.cpp
+	<iostream>
+	"Player.h"
+
