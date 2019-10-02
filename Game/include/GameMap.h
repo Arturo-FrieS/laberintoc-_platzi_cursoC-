@@ -14,7 +14,7 @@ class GameMap
         //obtiene cordenadas de player y actualiza mapa
         void SetPlayerCell(int PlayerX, int PlayerY);
     protected:
-
+    void LoadMapFromFile();
     private:
 };
 
