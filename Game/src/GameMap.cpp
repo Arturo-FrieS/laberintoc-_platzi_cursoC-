@@ -23,18 +23,29 @@ void GameMap::Draw()
 }
 
 
-void GameMap::SetPlayerCell(int PlayerX, int PlayerY)
+bool GameMap::SetPlayerCell(int PlayerX, int PlayerY)
 {
-    if (PlayerCell != NULL)
+  if(cells[PlayerY][PlayerX].IsBlocked()==false)
+  {
+     if (PlayerCell != NULL)
     {
         /* pinta cuando es un entero el valor
         PlayerCell->id = 0;
         */
-        PlayerCell->id='0';
+        PlayerCell->id=0;
     }
 
    PlayerCell = &cells[PlayerY][PlayerX];
         PlayerCell->id = '3';
+        return true;
+ }
+        else
+        {
+            return false;
+        }
+
+
+
 }
 
 void GameMap::LoadMapFromFile()

@@ -8,6 +8,8 @@ class MapCell
         MapCell();
       char id;
 
+      bool IsBlocked();
+
     protected:
 
     private:

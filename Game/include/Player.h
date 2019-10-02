@@ -8,8 +8,11 @@ class Player
         Player();
 
         void CallInput();
+        void ResetToSafePosition();
 
          int x, y;
+
+         int lastX, lastY;
     protected:
 
     private:

@@ -12,7 +12,7 @@ class GameMap
 
         void Draw();
         //obtiene cordenadas de player y actualiza mapa
-        void SetPlayerCell(int PlayerX, int PlayerY);
+        bool SetPlayerCell(int PlayerX, int PlayerY);
     protected:
     void LoadMapFromFile();
     private:
