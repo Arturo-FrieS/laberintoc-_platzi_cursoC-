@@ -7,27 +7,18 @@ using namespace std;
 
 int main()
 {
-    bool isGameOver=false;
+
     GameMap Map;
    Player Hero;
 
-    Map.DrawIntro();
-
-    while(isGameOver==false)
+   cout<<"inicia juego"<<endl;
+    while(Map.isGameOver==false)
     {
         //loop
         Hero.CallInput();
 
         //actualiza infomracion de mapa
-      if(  Map.SetPlayerCell(Hero.x, Hero.y))
-      {
-          Map.Draw();
-      }
-      else
-      {
-          Hero.ResetToSafePosition();
-          Map.Draw();
-      }
+        Map.SetPlayerCell(Hero.x, Hero.y);
 
         //dibujamos mapa
         Map.Draw();

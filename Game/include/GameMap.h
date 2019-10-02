@@ -10,9 +10,11 @@ class GameMap
         MapCell*PlayerCell;
         MapCell cells[15][10];
     void DrawIntro();
+      void DrawVictory();
         void Draw();
         //obtiene cordenadas de player y actualiza mapa
         bool SetPlayerCell(int PlayerX, int PlayerY);
+           bool isGameOver=false;
     protected:
     void LoadMapFromFile();
     private:

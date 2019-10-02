@@ -7,6 +7,7 @@ GameMap::GameMap()
 {
     PlayerCell=NULL;
     LoadMapFromFile();
+    isGameOver=false;
 }
 
 void GameMap::Draw()
@@ -27,7 +28,16 @@ bool GameMap::SetPlayerCell(int PlayerX, int PlayerY)
 {
   if(cells[PlayerY][PlayerX].IsBlocked()==false)
   {
-     if (PlayerCell != NULL)
+      if(cells[PlayerY][PlayerX].id=='4')
+      {
+          DrawVictory();
+          isGameOver=true;
+          return true;
+      }
+      else
+      {
+
+          if (PlayerCell != NULL)
     {
         /* pinta cuando es un entero el valor
         PlayerCell->id = 0;
@@ -37,6 +47,7 @@ bool GameMap::SetPlayerCell(int PlayerX, int PlayerY)
 
    PlayerCell = &cells[PlayerY][PlayerX];
         PlayerCell->id = '3';
+      }
         return true;
  }
         else
@@ -67,6 +78,27 @@ void GameMap::DrawIntro()
       cout<<"Fatal error"<<endl;
   }
 }
+
+void GameMap::DrawVictory()
+{
+   string line;
+  ifstream MyFile("victory.txt");
+
+  if (MyFile.is_open())
+  {
+    while(getline(MyFile, line))
+    {
+        cout<<line<<endl;
+
+    }
+    cin>>line;
+  }
+  else
+  {
+      cout<<"Fatal error"<<endl;
+  }
+}
+
 
 void GameMap::LoadMapFromFile()
 {

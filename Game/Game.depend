@@ -8,13 +8,13 @@
 	<iostream>
 	"Player.h"
 
-1570034884 source:c:\users\artur\onedrive\juegoc\game\src\player.cpp
+1570041272 source:c:\users\artur\onedrive\juegoc\game\src\player.cpp
 	"Player.h"
 	<iostream>
 
 1570034884 c:\users\artur\onedrive\juegoc\game\include\player.h
 
-1570039203 source:c:\users\artur\onedrive\juegoc\game\main.cpp
+1570042128 source:c:\users\artur\onedrive\juegoc\game\main.cpp
 	<iostream>
 	"Player.h"
 	"MapCell.h"
@@ -25,10 +25,10 @@
 1570034555 source:c:\users\artur\onedrive\juegoc\game\src\mapcell.cpp
 	"MapCell.h"
 
-1570035424 c:\users\artur\onedrive\juegoc\game\include\gamemap.h
+1570042102 c:\users\artur\onedrive\juegoc\game\include\gamemap.h
 	"MapCell.h"
 
-1570039245 source:c:\users\artur\onedrive\juegoc\game\src\gamemap.cpp
+1570042402 source:c:\users\artur\onedrive\juegoc\game\src\gamemap.cpp
 	"GameMap.h"
 	<iostream>
 	<fstream>
