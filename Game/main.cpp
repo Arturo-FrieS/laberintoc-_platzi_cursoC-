@@ -11,7 +11,8 @@ int main()
     GameMap Map;
    Player Hero;
 
-   cout<<"inicia juego"<<endl;
+    Map.DrawIntro();
+
     while(isGameOver==false)
     {
         //loop

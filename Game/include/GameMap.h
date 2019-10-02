@@ -9,7 +9,7 @@ class GameMap
         GameMap();
         MapCell*PlayerCell;
         MapCell cells[15][10];
-
+    void DrawIntro();
         void Draw();
         //obtiene cordenadas de player y actualiza mapa
         bool SetPlayerCell(int PlayerX, int PlayerY);

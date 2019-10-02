@@ -48,6 +48,26 @@ bool GameMap::SetPlayerCell(int PlayerX, int PlayerY)
 
 }
 
+void GameMap::DrawIntro()
+{
+   string line;
+  ifstream MyFile("intro.txt");
+
+  if (MyFile.is_open())
+  {
+    while(getline(MyFile, line))
+    {
+        cout<<line<<endl;
+
+    }
+    cin>>line;
+  }
+  else
+  {
+      cout<<"Fatal error"<<endl;
+  }
+}
+
 void GameMap::LoadMapFromFile()
 {
   /*
